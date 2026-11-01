@@ -1,0 +1,17 @@
+{
+  "base_config": "configs/memory_study.json",
+  "seed": 20261101,
+  "bootstrap_repetitions": 2000,
+  "minimum_observed": 50,
+  "minimum_matches": 5,
+  "context_specs": ["initial_receipt", "completion_geometry"],
+  "outcomes": ["R3", "shot10", "survival3", "box3", "shot15_pass_start"],
+  "policies": ["all_linked", "previous_event_5s", "between_passes_5s", "no_carry_dribble"],
+  "maximum_gap_seconds": 5,
+  "time_tolerance_seconds": 0.001,
+  "patterns": {"2": ["ABA", "ABC"], "3": ["ABAB", "ABAC", "ABCA", "ABCB", "ABCD"]},
+  "contrasts_reference": {"2": "ABC", "3": "ABCD"},
+  "scope_sensitivity": ["all_periods", "regulation"],
+  "retraining_sensitivity": "Timing/direct-pass filters reuse full-cohort OOF models; no subset refits.",
+  "paper_reference": "https://www.degruyterbrill.com/document/doi/10.1515/jqas-2019-0097/html"
+}

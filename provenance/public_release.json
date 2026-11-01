@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-01",
+  "purpose": "Conservative packaging for non-commercial public research.",
+  "terms_reviewed": {
+    "agreement_sha256": "a5462e69aeb71a39268b760b110c5c2190a2e0cee3015ba976f66bd71f6c2bb4",
+    "agreement_last_updated": "2023-09-08",
+    "clauses": [
+      "introduction",
+      "1.2.1",
+      "1.2.2",
+      "1.4",
+      "7"
+    ],
+    "url": "https://github.com/hudl/open-data/blob/4b73468fc5b0f1950f9f66fada70ad3a4f9327cb/LICENSE.pdf"
+  },
+  "public_content": "Original code, English methods, source-only notebooks, 12 aggregate figure pairs and attribution.",
+  "excluded_categories": [
+    "source JSON",
+    "event/sequence CSV",
+    "OOF predictions",
+    "probability NPZ",
+    "GraphML/adjacency data",
+    "trained parameters including xT grids",
+    "executed notebook outputs"
+  ],
+  "aggregate_figure_sha256": {
+    "results/public/figures/memory_01_memory_gain.png": "1b5b2588a7445c3543bd69a5b94d864f44b94c26b62102ae46a28b54882223e1",
+    "results/public/figures/memory_01_memory_gain.svg": "3dea03a8c2465e1a56fe3f8ca8ba7ee5b4ec89040cd5ab877ff2aa46bd83e938",
+    "results/public/figures/memory_02_model_losses.png": "9659a4a90f19fe1c9b543acd9690647c0ff26d740454a18eb3e52fe2e6a376e8",
+    "results/public/figures/memory_02_model_losses.svg": "4b676f10efaf837d8deee323dc3784a4113a1dc75089e758d8bbb8fcc4c00a41",
+    "results/public/figures/memory_04_calibration.png": "de717867c9fc06c82d0b1ae6e4a2eda6ee67b6648be945c0d1db8f827934936e",
+    "results/public/figures/memory_04_calibration.svg": "e0b41116796e1331855732e3b8b8e611a4f5511492b345e716fb542c8afdfbd6",
+    "results/public/figures/memory_05_split_sensitivity.png": "3b5a76206e278bdf7819de34d8af7d6593213f72a104e48ce288ffa8d92d58ea",
+    "results/public/figures/memory_05_split_sensitivity.svg": "db284227d4ca4a324730c02684ab9194d23e4f83b56b99ecdf6fd795e6796b35",
+    "results/public/figures/motifs_01_motif_definitions.png": "8b4a866ee44c6560b162e31a340a6a81266b49a125b5405ef3a43ce738171873",
+    "results/public/figures/motifs_01_motif_definitions.svg": "f2400d41fd99ed82ca2ca48ac710dec61a6d33e474f378b43b3c2ae92e24e766",
+    "results/public/figures/motifs_02_pattern_frequencies.png": "025bee959a9fc487def8e7a76f20c83de0c48544caf7490894e6e15deeab2f9a",
+    "results/public/figures/motifs_02_pattern_frequencies.svg": "b156412c47836c3a7147907b99256f34d548b6b42d5aa4d05f295963aadf0a0d",
+    "results/public/figures/motif_xg_01_frequency_value_quality.png": "385075a2f53600dcdf9dc2f08015fa0608c5a6190e3bcb492a40d0b5369b676b",
+    "results/public/figures/motif_xg_01_frequency_value_quality.svg": "e850e6d43772734f858c6414ced4e6186588eb60dc4fa6b8f4a3bf37fa994584",
+    "results/public/figures/motif_xg_02_three_pass_differences.png": "480d1306d3cd40ddd45eab4d040896e719b5c0c164af05f47df8f2f7c86c2b4a",
+    "results/public/figures/motif_xg_02_three_pass_differences.svg": "7736be405b5a8706ab69100962d03db18e4f42a3d60d1c25b0c6f3ace1d4d740",
+    "results/public/figures/motif_xg_03_context_adjusted_xg.png": "17aaa78bba1943d1cac2eda0f3c65584e894cb435ab8445c7b11213c3f5d95c2",
+    "results/public/figures/motif_xg_03_context_adjusted_xg.svg": "259ec1d70eb26a05bc2d9f8165c7b96d5df17c903b2cc613907a0b8cf46630e7",
+    "results/public/figures/motif_xg_04_horizon_sensitivity.png": "5ecb7266ae09628c8a017e949a2168f8ce23919f08ee9b541e38ff6108ee477b",
+    "results/public/figures/motif_xg_04_horizon_sensitivity.svg": "85314378152abfb03ab079b22cfe374229b90c0d842a628586b59ec3e467feb1",
+    "results/public/figures/motif_xg_05_overlap_weighting.png": "330646fca9e97612cb174699de97124914fb36a180c15f7a5b01306c3ed18966",
+    "results/public/figures/motif_xg_05_overlap_weighting.svg": "535617586c2eeefef13764404e8b29934032faa9033c7eb4ec692aa9243d76e2",
+    "results/public/figures/motif_xg_06_timing_sensitivity.png": "2ac6448a574120dbdc4910e2fcd6fe1ea39b22d92191a6363a4d467e3e3b70b5",
+    "results/public/figures/motif_xg_06_timing_sensitivity.svg": "bd14c1296efa414c55487c5070dd308f54bb4b4a18fd5d4e5dab3d73be84f0b8"
+  },
+  "original_local_outputs": "Retained locally; not included in this public package.",
+  "legal_scope": "Packaging interpretation, not a legal opinion or written permission from the data owner."
+}

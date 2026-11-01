@@ -1,0 +1,117 @@
+{
+  "profile": "non-commercial-research-code-and-aggregate-figures",
+  "source_notebooks": [
+    "memory_aware_analysis.ipynb",
+    "football_passing_networks.ipynb",
+    "fixed_lineups.ipynb",
+    "extended_analysis.ipynb"
+  ],
+  "aggregate_figures": [
+    {
+      "source_stem": "results/memory/figures/01_memory_gain",
+      "public_stem": "results/public/figures/memory_01_memory_gain",
+      "title": "Does the previous state help?",
+      "caption": "Primary 5-fold OOF predictions; 33,358 completed A\u2192B\u2192C paths. Paired bootstrap of 51 whole matches, 2,000 replicates. Spatial memory and player identity memory are different questions.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/memory/figures/02_model_losses",
+      "public_stem": "results/public/figures/memory_02_model_losses",
+      "title": "Absolute prediction quality matters too",
+      "caption": "M0/M1/M2 are smoothed counts; +X denotes common receipt context. Identity context models have worse log loss than the count models despite a small M2+X versus M1+X gain. Losses across different target alphabets are not direct comparisons.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/memory/figures/04_calibration",
+      "public_stem": "results/public/figures/memory_04_calibration",
+      "title": "Are predicted confidences reliable?",
+      "caption": "Ten fixed confidence bins; marker area scales with \u221an. Sparse high-confidence bins can be unstable. Detailed counts and Brier/top-1/top-3 scores are exported.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/memory/figures/05_split_sensitivity",
+      "public_stem": "results/public/figures/memory_05_split_sensitivity",
+      "title": "Split and chronological sensitivity",
+      "caption": "Repeats are robustness checks, not independent samples. Rolling counts use only prior calendar dates and fixed alpha1=alpha2=10; they have different history and tuning from nested retrospective CV.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/motifs/figures/01_motif_definitions",
+      "public_stem": "results/public/figures/motifs_01_motif_definitions",
+      "title": "Two passes versus three passes",
+      "caption": "Canonical labels discard names while preserving repeated-player identities. Two passes give ABA/ABC; three give five possible patterns. Carry/dribble links are recorded, not converted into extra passes.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/motifs/figures/02_pattern_frequencies",
+      "public_stem": "results/public/figures/motifs_02_pattern_frequencies",
+      "title": "How often does each pattern occur?",
+      "caption": "All 51 matches, regulation and extra time; one row per actual rolling motif. Overlapping motifs are included and are not independent chances. Three-pass motifs are a selected subset of chains that survived through a third completed pass.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/motif_xg/figures/01_frequency_value_quality",
+      "public_stem": "results/public/figures/motif_xg_01_frequency_value_quality",
+      "title": "Frequency, total threat and shot quality are separate measures",
+      "caption": "From the final receipt to the end of the same provider possession, stopping earlier at opponent control, goal or observed period end. All three panels use the same complete-observation cohort. No shot means xG=0; unknown observations stay missing. xG per shot is a ratio over shot links, not an average over non-shooting motifs.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/motif_xg/figures/02_three_pass_differences",
+      "public_stem": "results/public/figures/motif_xg_02_three_pass_differences",
+      "title": "What differs from four distinct players?",
+      "caption": "Raw differences versus ABCD, with both sides jointly resampled. A difference in xG per motif may arise from shot frequency, number of shots and/or shot quality. The ratio xG/shot is recomputed inside every bootstrap replicate; intervals are pointwise, not simultaneous tests.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/motif_xg/figures/03_context_adjusted_xg",
+      "public_stem": "results/public/figures/motif_xg_03_context_adjusted_xg",
+      "title": "Does the source-xG difference remain after context adjustment?",
+      "caption": "New conditional q models fit source xG sum and shot occurrence separately for each pass length and horizon. Full-possession xG models do not consistently beat a training-mean MSE baseline; treat adjusted contrasts as exploratory sensitivity. Initial and completion adjustments answer different descriptive questions. Completion/geometry can remove part of the motif's spatial pathway. These are residual associations, not causal effects.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/motif_xg/figures/04_horizon_sensitivity",
+      "public_stem": "results/public/figures/motif_xg_04_horizon_sensitivity",
+      "title": "How the time horizon changes the observed opportunities",
+      "caption": "Both horizons start at the final receipt and use the same new provider-possession boundary rule. Thus the 10-second values need not equal the earlier step-4 bounded-continuous-play results. Natural period end closes a remaining-possession window; an unresolved file tail is censored.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/motif_xg/figures/05_overlap_weighting",
+      "public_stem": "results/public/figures/motif_xg_05_overlap_weighting",
+      "title": "Does crediting overlapping motifs change apparent shot quality?",
+      "caption": "The primary xG/shot denominator is the number of motif\u2013shot links, which preserves the xG/motif decomposition. The sensitivity deduplicates UUIDs within each order/pattern/policy/horizon. The same physical shot may still support different patterns. Both use shared match/possession resampling; credits must not be added as independent chances.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    },
+    {
+      "source_stem": "results/motif_xg/figures/06_timing_sensitivity",
+      "public_stem": "results/public/figures/motif_xg_06_timing_sensitivity",
+      "title": "Source-xG results under both five-second definitions",
+      "caption": "All timing, no-carry and regulation-only results are retained in CSV. Small groups remain without intervals. Quality intervals require at least 20 unique shots across five matches; other metrics require 50 complete motifs across five matches. Fixed full-cohort q models are used for adjusted sensitivity subsets.",
+      "reason": "Aggregate analytical comparison; no event/sequence rows or learned-parameter file."
+    }
+  ],
+  "fixed_files": [
+    ".github/workflows/ci.yml",
+    "assets/statsbomb-logo.png",
+    "configs/memory_study.json",
+    "configs/motifs.json",
+    "configs/motif_xg.json",
+    "data/manifest.json",
+    "data/xt_training_manifest.json",
+    "results/public/index.html",
+    "results/public/publication_check.json",
+    "provenance/public_release.json"
+  ],
+  "excluded_categories": [
+    "source JSON",
+    "event/sequence CSV",
+    "OOF predictions",
+    "probability NPZ",
+    "GraphML/adjacency data",
+    "trained parameters including xT grids",
+    "executed notebook outputs"
+  ],
+  "source_terms": "https://github.com/hudl/open-data/blob/4b73468fc5b0f1950f9f66fada70ad3a4f9327cb/LICENSE.pdf"
+}

@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/hudl/open-data",
+  "commit": "4b73468fc5b0f1950f9f66fada70ad3a4f9327cb",
+  "match_ids": [
+    3942226,
+    3942752,
+    3943043
+  ],
+  "competition_id": 55,
+  "season_id": 282,
+  "download_mode": "shallow, blob-filtered sparse clone; selected match files only",
+  "sha256": {
+    "data/competitions.json": "c5f10d2811ace6057ff8e414bfd93c2c34c27dddb2199d9fc29ffc425bc30425",
+    "data/events/3942226.json": "9e62eceb78e5d5ca4498e5f9ee2b5169524f9b7bf2e42481520fbf064c20551e",
+    "data/events/3942752.json": "287d3451905aaf59bef49172107f86db5c7c9e7794a0e1ac8354f52ea465fe8d",
+    "data/events/3943043.json": "99e8db5e9cf3e73dd71d360022be8e98f3922a8eed820e76844b0517a7a77e7c",
+    "data/lineups/3942226.json": "e890a1391cd393bec194d8f71cef25d4f90368d656c4d73a40aee49ca610fc54",
+    "data/lineups/3942752.json": "69129803999d3f880a32a478b23c32d93143d136c3308ff1325b277b34cc72d6",
+    "data/lineups/3943043.json": "84790954c6e5a5bac420f83d3b018c4372723a2ec9e4493e73a5a517e53dfece",
+    "data/matches/55/282.json": "4031e75dcce6c3d251df68d81b782cd1095ca0517498b7dc761c8da8a618d5d8",
+    "img/SB - Icon Lockup - Colour positive.png": "8ba5480785f0dc4be2342ec47c70509483eb79287f85f92be1dfba36fc2872a7",
+    "LICENSE.pdf": "a5462e69aeb71a39268b760b110c5c2190a2e0cee3015ba976f66bd71f6c2bb4",
+    "README.md": "c01028f949815e9e4d1f8a25bd4c2e7013017538ce69b17246e4b33e3e4a8212"
+  }
+}

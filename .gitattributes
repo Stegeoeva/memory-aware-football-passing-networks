@@ -1,0 +1,4 @@
+# Preserve committed bytes: scientific manifests hash source and output files.
+# Automatic checkout newline conversion would invalidate those hashes.
+* -text
+results/** linguist-generated=true

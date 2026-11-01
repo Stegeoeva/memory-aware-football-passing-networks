@@ -1,0 +1,18 @@
+{
+  "motif_config": "configs/motifs.json",
+  "base_config": "configs/memory_study.json",
+  "seed": 20261101,
+  "bootstrap_repetitions": 2000,
+  "horizons": ["possession", "10s"],
+  "minimum_observed_motifs": 50,
+  "minimum_matches": 5,
+  "minimum_unique_shots": 20,
+  "context_specs": ["initial_receipt", "completion_geometry"],
+  "q_outcomes": ["xg_sum", "shot_any"],
+  "policies": ["all_linked", "previous_event_5s", "between_passes_5s", "no_carry_dribble"],
+  "scope_filters": ["all_periods", "regulation"],
+  "patterns": {"2": ["ABA", "ABC"], "3": ["ABAB", "ABAC", "ABCA", "ABCB", "ABCD"]},
+  "reference": {"2": "ABC", "3": "ABCD"},
+  "possession_definition": "Contiguous provider possession ID/team within match/period; stop earlier at confirmed opponent control, goal or observed Half End. Own restarts within that run remain and are flagged.",
+  "observation": "Closed natural period end is complete for remaining-possession horizon; unresolved source-file end is censored. Invalid final receipt or missing shot xG is never filled with zero."
+}

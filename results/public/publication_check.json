@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "publication_profile": "public-code-and-aggregate-analysis",
+  "public_files": 106,
+  "public_links_checked": 103,
+  "source_notebooks": 4,
+  "code_cells_with_outputs": 0,
+  "source_code_cells": 32,
+  "aggregate_figure_pairs": 12,
+  "redistributed_event_tables": 0,
+  "trained_parameter_files": 0,
+  "largest_file_bytes": 156757,
+  "legal_scope": "Packaging checks, not a legal opinion or written permission from the data owner."
+}
